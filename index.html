@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./estilos/main.css">
     <title>Gemmasoft</title>
 </head>
 <body>
@@ -21,18 +22,31 @@
         </section>
 
         <section>
-           <form>       
-               <form action="procesarFromulario.php">
+           <form class="form" action="index.html" method="POST">       
                    Ingresa tu usuario<br>
                    <input type="text" name="USUARIO" id="usuario" placeholder="USUARIO" required><br>
                    Ingresa tu contraseña<br>
-                   <input type="text" name="CONTRASEÑA" id="contraseña"  placeholder="CONTRASEÑA" required><br>
-                   Ingresa tu rol<br>
-                   <input type="text" name="ROL" id="rol"  placeholder="ROL" required><br>
-                   <input type="submit" value="INGRESAR">
-                   <input type="submit" value="REGISTRARSE">
+                   <input type="password" name="pass" id="pass"  placeholder="CONTRASEÑA" required><br>
+                   Elige tu rol<br>
+                   <select name="roles" id="rol">
+                       <option value="1">Estudiante</option>
+                       <option value="2">Profesor</option>
+                       <option value="3">Usuario</option>
+                       <option value="4">Acudiente</option>
+                   </select>
+                   <input class="boton" type="submit" value="INGRESAR">
+                   <input class="boton" type="submit" value="REGISTRARSE">
            </form> 
         </section>
     </main>
+    <footer class="footer"> 
+        <p>
+            APROBACION  OFICIAL SECRETARÍA DE EDUCACIÓN DE CUNDINAMARCA
+            RESOLUCION No 010552 DE NOVIEMBRE 30 DE 2011 <br>
+         <strong>Somos la simiente de un pueblo digno y emprendedor</strong><br>
+            Barrio “Las Villas” – 311-5650738 -  colsantagemma@hotmail.com <br>
+            Caparrapí – Cundinamarca – República de Colombia
+        </p>
+    </footer>
 </body>
 </html>
