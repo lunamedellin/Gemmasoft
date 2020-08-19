@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../imagenes/Iconcol.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../estilos/main.css">
+    <title>Gemmasoft</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="../imagenes/Escudocol.svg" alt="Colegio Santa Gemma de Galgani">
+        <div class="header__title">
+            <h1>INSTITUCIÓN EDUCATIVA DEPARTAMENTAL</h1>
+            <h1>SANTA GEMMA DE GALGANI</h1>
+            <h1>CAPARRAPÍ - REPUBLICA DE COLOMBIA</h1>
+        </div>
+        <img class="header__img" src="../imagenes/Escudo_de_Cundinamarca.svg" alt="Escudo de Cundinamarca">
+    </header>
+    <main class="mainsection">
+      <h3><strong>DATOS DEL ESTUDIANTE</strong></h3> 
+        <section>
+           <form class="form" action="frm_Registrese.html" method="POST">       
+                   Tipo de identificación
+                   <select name="tidentificacion" id="identificación">
+                       <option value="1">CC</option>
+                       <option value="2">CE</option>
+                       <option value="3">TI</option>
+                       <option value="4">RC</option>                       
+                   </select>                   
+                   identificación: 
+                   <input type="number" name="num" id=""  placeholder="Número" required><br>
+                   Primer Nombre:
+                   <input type="text" name="nombre1" id="nombre2"  placeholder="Primer Nombre" required>
+                   Segundo Nombre:
+                   <input type="text" name="nombre2" id="nombre2"  placeholder="Segundo Nombre" required>
+                   Primer Apellido:
+                   <input type="text" name="apellido1" id="apellido1"  placeholder="Primer Apellido" required>
+                   Segundo Apellido:
+                   <input type="text" name="apellido2" id="apellido2"  placeholder="Segundo Apellido" required><br>
+                   Acudiente:
+                   <input type="text" name="acudiente" id="acudiente"  placeholder="Nombre Acudiente" required>
+                   Teléfono:
+                   <input type="tel" name="teléfono" id="telefono" placeholder="Número" required><br>
+                   Dirección:
+                   <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required><br>
+                   E-mail:
+                   <input type="email" name="email" id="email" placeholder="E-mail" required><br>
+                   Género:
+                   <select name="género" id="genero">
+                       <option value="Masculino">Masculino</option>
+                       <option value="Femenino">Femenino</option>
+                       <option value="Otro">Otro</option>    
+                   </select>
+
+
+                   <input class="boton" type="submit" value="INGRESAR">
+                   <input class="boton" type="submit" value="REGISTRARSE">
+           </form> 
+        </section>
+    </main>
+    <footer class="footer"> 
+        <p>
+            APROBACION  OFICIAL SECRETARÍA DE EDUCACIÓN DE CUNDINAMARCA
+            RESOLUCION No 010552 DE NOVIEMBRE 30 DE 2011 <br>
+         <strong>Somos la simiente de un pueblo digno y emprendedor</strong><br>
+            Barrio “Las Villas” – 311-5650738 -  colsantagemma@hotmail.com <br>
+            Caparrapí – Cundinamarca – República de Colombia
+        </p>
+    </footer> 
+</body>
+</html>
